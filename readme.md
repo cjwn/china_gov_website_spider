@@ -10,7 +10,7 @@
 使用flask读取sqlite数据并展示网页
 ### 主要方法
 DbBot 管理数据库相关的方法\
-Spyderlets 爬虫相关功能
+Spyderlets 爬虫特工们的相关功能
 
 
 
