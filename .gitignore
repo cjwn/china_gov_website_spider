@@ -1,0 +1,6 @@
+*.json
+*.pyc
+*.html
+*.db
+/learn
+/tool
