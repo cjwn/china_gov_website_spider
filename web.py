@@ -42,7 +42,7 @@ def close_db(error):
 @app.route('/')
 def hello_world():
    db = get_db()
-   cur = db.execute('SELECT * FROM Sites')
+   cur = db.execute('SELECT * FROM Sites ORDER BY Date DESC')
    rows = cur.fetchall()
    # for row in rows:
    #      print(f"{row['Date']}, {row['Name']}, {row['URL']}.")
