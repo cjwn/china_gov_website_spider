@@ -51,4 +51,14 @@ def test_mct(url):
     # print(clear)
 
 url = 'https://zwgk.mct.gov.cn/zfxxgkml/zcfg/gfxwj/202206/t20220627_934100.html'
-test_mct(url)
+# test_mct(url)
+
+def test_sql():
+     
+    conn = sqlite3.connect('db_test.db')
+    c = conn.cursor()
+    cursor = c.execute("SELECT * FROM Sites")
+    rows = cursor.fetchall()
+    print(rows)
+
+test_sql()

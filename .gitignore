@@ -4,3 +4,4 @@
 *.db
 /learn
 /tool
+!/templates/*.html

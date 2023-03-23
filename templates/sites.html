@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+    <h1>Content</h1>
+    <ul>
+    {% for row in sites %}
+        <li>{{ row['Date'] }}, <strong>{{ row['Name'] }}</strong>, {{ row['URL'] }}, {{ row['content'] }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
