@@ -3,6 +3,15 @@
 
 <head>
     <title>My App</title>
+    <style type="text/css">
+        .article .content {
+            display: none;
+        };
+        .excerpt{
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -26,11 +35,7 @@
         </ul>
     </div>
 </body>
-<style>
-    .article .content {
-        display: none;
-    }
-</style>
+
 <script>
     const readMoreButtons = document.querySelectorAll('.read-more-button');
     readMoreButtons.forEach(button => {
@@ -38,6 +43,7 @@
             const article = button.parentNode;
             const excerpt = article.querySelector('.excerpt');
             const content = article.querySelector('.content');
+            
             if (content.style.display === 'none') {
                 content.style.display = 'block';
                 excerpt.style.display = 'none';
@@ -47,6 +53,8 @@
                 excerpt.style.display = 'block';
                 button.textContent = '阅读全文';
             }
+            // content.style.display = 'block';
+            // excerpt.style.display = 'none';
         });
     });
 </script>
