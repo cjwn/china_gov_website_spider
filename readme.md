@@ -15,7 +15,7 @@
 环境准备 python > 3.7  
 
 ```
-pip install lxm, flask-sqlalchemy 
+pip install lxml, flask-sqlalchemy 
 ```
 
 (虽然sqlalchemy目前还没用上……)
